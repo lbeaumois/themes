@@ -34,6 +34,7 @@ The group works as a set of workstreams under one common reference architecture.
 - The functions that author, grade and keep them current.
 - The demarcation with WG2, and the interfaces with WG1, #1, #13 and #16.
 - The diagrams already drawn for the #18 / #36 picture are the starting point.
+- D1 examines an interface with #13's collective interpretation function (F2), through which a receiving participant can qualify material dependencies, declared limits and unresolved conditions affecting reliance on results composed from several sources. Source-owned trust state, receiving-party qualification and the applicable WG2 decision remain distinct. Whether the interface needs any requirement beyond the existing objects is decided by the comparison in #60.
 
 **2. Clusters of agents.** Two positions are on the record, and the architecture keeps both explicit:
 
@@ -65,7 +66,7 @@ The architecture states what a cluster is for control purposes and where account
   - The reach of a decided change: which acts, agents and delegated workers it concerns. Its content stays with Workstream A, and the human decision with #16 (see #60).
   - Whether each act consulted the record, and evidence of that, independent of the component that acknowledged the change.
   - How stale a copy of the record may be; what an act does when it cannot reach the record; how two copies that disagree are detected; observe-before-enforce transitions.
-  - Acts already under way when the record changes: long-running acts, and acts of delegated workers fanned out from one agent.
+  - Acts already under way when the record changes, including delegated workers fanned out from one agent. The operation boundaries, and the records left at each check, are WG2's (see #60); this workstream specifies what happens inside one operation when the record changes, including its interruption and the time to effect, and the reach of a change to operations and workers on platforms where the enforcement point does not sit inside the operation.
   - Re-evaluation when new evidence arrives for the same subject or when the version of a policy reference changes. This covers the non-monotonic case raised on #33.
   - Time to effect, measured as whether and when the next act stopped, not as time to acknowledgement.
   - A common intervention interface that agent platforms could honour.
@@ -132,7 +133,7 @@ Milestones, aligned with the FG calendar:
 - **#42, #43, #33:** evidence grading (Workstream C), evidence-graded verdicts (WG2's interface), and late evidence (Workstream E).
 - **#41:** Workstream D if joined.
 - **#1:** records what the control plane changed and when.
-- **#13:** its signals are inputs here; this group produces evidence of the effect of an intervention, which #13 can read back.
+- **#13:** its signals are inputs here; this group produces evidence of the effect of an intervention, which #13 can read back. D1 examines an interface with #13's collective interpretation function (F2) for results composed from several sources.
 - **#16:** decides on hold, intervention and resumption; this group evidences whether the next act honoured the decision.
 - **#10, #21, #23, #29, #50, #53, #54:** interfaces to be drawn with their proposers.
 
@@ -145,5 +146,5 @@ Milestones, aligned with the FG calendar:
 - **#41.** A workstream here, or a group of its own with a defined interface? That is for its proposers to say.
 - **#23 and #29.** Do they belong here, or at an interface?
 - **ToR A.2.2** (a trust lifecycle framework for agentic AI). This charter does not map it. Where it belongs, here or elsewhere, is to be decided with the themes that work on lifecycles (#23, #38–#40).
-- **Results composed from several sources** (@dakleyer). Should D1 name an interface with #13's interpretation function (F2), through which a receiving party qualifies results that rely on several sources? Such qualification would not change source-owned objects, confer authority or replace the per-operation decision. To be tested first against the existing objects (#60).
+- **Results composed from several sources** (@dakleyer). Does the interface with #13's F2 examined in D1 need any requirement beyond the existing objects? Decided by the comparison in #60.
 - **The common intervention interface.** What is the smallest one agent platforms could honour?
